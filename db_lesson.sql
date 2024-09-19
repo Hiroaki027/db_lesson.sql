@@ -55,7 +55,8 @@ update people set department_id = ceil(1 + rand() * 5)
 select * from people;
 
 Q5
-select * from people where gender = 1
+select name, age from people
+    -> where gender = 1
     -> order by age desc;
 
 Q6
@@ -73,7 +74,7 @@ ORDER BY
 --ORDER BYで`created_at`カラム(いわゆる作成日)順に昇順で並び替えている。
 
 Q7
-select * from people
+select name from people
     -> where age >= 20 and age < 30 or age >=40 and age < 50;
 
 Q8
